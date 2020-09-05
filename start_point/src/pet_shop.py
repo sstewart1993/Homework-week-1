@@ -64,13 +64,10 @@ def add_pet_to_customer(customers, new_pet):
 
 #  ---OPTIONAL----
 
-def customer_can_afford_pet(customer, pet_shop):
-    cash = get_customer_cash(customer)
-    can_buy_pet = pet_shop["pets"]["price"]
-    for pet in pet_shop["pets"]["price"]:
-        if can_buy_pet <= cash:
-            return True
-        # elif pet["price"] > cash:
-        #     return False
-
-
+def customer_can_afford_pet(customers, pet_shop):
+    money = get_customer_cash(customers)
+    price = pet_shop["price"]
+    if money >= price:
+        return True
+    elif money < price:
+        return False
