@@ -1,16 +1,15 @@
 # WRITE YOUR FUNCTIONS HERE
 
 def get_pet_shop_name(pets):
-    if (pets["name"]):
-        return (pets ["name"])
+    return (pets ["name"])   
 
 def get_total_cash(pets):
-        return pets["admin"]["total_cash"]
+    return pets["admin"]["total_cash"]
 
 def add_or_remove_cash(pets, amount):
        cash = get_total_cash(pets)
        pets["admin"]["total_cash"] = cash + amount
-       return pets["admin"]["total_cash"]
+       return cash
 
 def get_pets_sold(pets):
         return pets["admin"]["pets_sold"]

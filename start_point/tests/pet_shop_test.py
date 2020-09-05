@@ -1,7 +1,7 @@
 import unittest
 from src.pet_shop import *
 
-class TestPetShop(unittest.TestCase):
+class TestPetShop(unittest.TestCase): 
 
     def setUp(self):
         self.customers = [
