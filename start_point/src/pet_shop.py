@@ -71,3 +71,17 @@ def customer_can_afford_pet(customers, pet_shop):
         return True
     elif money < price:
         return False
+
+# --- integration ---
+
+def sell_pet_to_customer(pet_shop, pet, customer):
+    find_pet_by_name(pet_shop, pet_name)
+    pet_count = customer["pets"]
+
+
+
+
+
+
+
+
