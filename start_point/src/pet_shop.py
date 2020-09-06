@@ -74,10 +74,11 @@ def customer_can_afford_pet(customers, pet_shop):
 
 # --- integration ---
 
-def sell_pet_to_customer(pet_shop, pet, customer):
-    find_pet_by_name(pet_shop, pet_name)
-    pet_count = customer["pets"]
-
+def sell_pet_to_customer(pet, pet_shop, customers):
+    add_pet_to_customer(customers, pet_shop)    
+    get_pets_sold(pet)
+    get_customer_cash(customers)
+    get_total_cash(pet)
 
 
 
